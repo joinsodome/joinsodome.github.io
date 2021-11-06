@@ -21,6 +21,18 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -85,17 +97,17 @@
     
         
         <li>
-            <a href="github.com/joinsodome/" target="_blank" class="custom-link">Github</a>
+            <a href="https://github.com/joinsodome/" target="_blank" class="custom-link">Github</a>
         </li>
     
         
         <li>
-            <a href="gitee.com/joinsodome/" target="_blank" class="custom-link">Gitee</a>
+            <a href="https://gitee.com/joinsodome/" target="_blank" class="custom-link">Gitee</a>
         </li>
     
         
         <li>
-            <a href="zhihu.com/people/kangzexizhihu/" target="_blank" class="custom-link">知乎(Zhihu)</a>
+            <a href="https://zhihu.com/people/kangzexizhihu/" target="_blank" class="custom-link">知乎(Zhihu)</a>
         </li>
     
     
@@ -140,7 +152,7 @@
                 <a href="./">
             
                     
-                    1.基础语法
+                    基础语法
             
                 </a>
             
@@ -305,6 +317,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.1.13" data-path="13.html">
+            
+                <a href="13.html">
+            
+                    
+                    13.try...except...容不得你在这儿撒野！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="14.html">
+            
+                <a href="14.html">
+            
+                    
+                    14.当来自文件世界的精灵们，跑到了Python中……
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -360,45 +398,45 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>Python&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF08;9&#xFF09;&#x2014;&#x2014;&#x4E07;&#x4E8B;&#x4E07;&#x7269;&#x7686;&#x5BF9;&#x8C61;</p>
+                                <h1 id="python&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF08;9&#xFF09;&#x2014;&#x2014;&#x4E07;&#x4E8B;&#x4E07;&#x7269;&#x7686;&#x5BF9;&#x8C61;">Python&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF08;9&#xFF09;&#x2014;&#x2014;&#x4E07;&#x4E8B;&#x4E07;&#x7269;&#x7686;&#x5BF9;&#x8C61;</h1>
 <p>&#x5728;&#x5F00;&#x59CB;&#x4E4B;&#x524D;&#xFF0C;&#x8BF7;&#x5141;&#x8BB8;&#x6211;&#x6765;&#x4E2A;&#x641E;&#x7B11;&#x56FE;&#x7247;&#xFF1A;</p>
-<p><img src="https://pic2.zhimg.com/80/v2-5bb6a772cf83f5ab896453cbbf085691_720w.jpg" alt="img"></p>
+<p><a href="https://pic2.zhimg.com/80/v2-5bb6a772cf83f5ab896453cbbf085691_720w.jpg" data-lightbox="7bbcb86a-c660-4458-916a-da9543afeaa2" data-title="img" target="_blank"><img src="https://pic2.zhimg.com/80/v2-5bb6a772cf83f5ab896453cbbf085691_720w.jpg" alt="img"></a></p>
 <p>&#x5C0F;&#x4F19;&#x4F34;&#xFF1A;&#x662F;&#x7684;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x600E;&#x4E48;&#x5199;&#x3002;(lll&#xFFE2;&#x3C9;&#xFFE2;)</p>
 <p>&#x7684;&#x786E;&#xFF0C;&#x56E0;&#x4E3A;Python&#x7684;&#x53EF;&#x80FD;&#x6027;&#x592A;&#x5927;&#x4E86;&#xFF0C;&#x6709;&#x5343;&#x4E07;&#x540D;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x7EF4;&#x62A4;Python&#xFF0C;&#x4E5F;&#x6709;&#x4EBA;&#x5728;&#x7F16;&#x5199;Python&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x8BF4;&#x4E0D;&#x5B9A;&#x4F55;&#x65F6;&#x7ED9;&#x4F60;&#x6765;&#x4E86;&#x4E2A;&#x751F;&#x5B69;&#x5B50;&#x7684;&#x6A21;&#x5757;&#x5462;&#x3002;&#xFF08;&#x72D7;&#x5934;&#x4FDD;&#x547D;(&#x2283;&#xFF65;&#x1D25;&#xFF65;)&#x3064;&#xFF09;</p>
 <p>&#x7ADF;&#x7136;&#x521A;&#x624D;&#x8BF4;&#x5230;class&#x4E86;&#xFF0C;&#x90A3;&#x5C31;&#x7ED9;&#x4F60;&#x8BB2;&#x8BB2;&#x7C7B;&#x5427;&#x3002;</p>
 <p>&#x867D;&#x7136;&#x4E4B;&#x524D;&#x8BB2;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x4E71;&#x4E03;&#x516B;&#x7CDF;&#x7684;&#xFF0C;TMD&#x90FD;&#x6CA1;&#x8BB2;&#x5BF9;&#x3002;</p>
 <p>&#x5C0F;&#x4F19;&#x4F34;&#xFF1A;&#x6211;&#x5C31;&#x77E5;&#x9053;&#x80AF;&#x5B9A;&#x5F97;&#x5B66;&#x4E60;&#x3002;(&#x2283;&#xFF65;&#x1D25;&#xFF65;)&#x3064;</p>
-<p><img src="https://pic3.zhimg.com/80/v2-091d621b374a834e2f24b1eec09997a6_720w.jpg" alt="img"></p>
+<p><a href="https://pic3.zhimg.com/80/v2-091d621b374a834e2f24b1eec09997a6_720w.jpg" data-lightbox="171553a8-c70a-40c7-b313-99e633cab10e" data-title="img" target="_blank"><img src="https://pic3.zhimg.com/80/v2-091d621b374a834e2f24b1eec09997a6_720w.jpg" alt="img"></a></p>
 <h2 id="1&#x5728;python&#x4E2D;&#xFF0C;&#x4F60;&#x770B;&#x5230;&#x7684;&#x90FD;&#x662F;&#x4EC0;&#x4E48;">1.&#x5728;Python&#x4E2D;&#xFF0C;&#x4F60;&#x770B;&#x5230;&#x7684;&#x90FD;&#x662F;&#x4EC0;&#x4E48;</h2>
 <p>&#x5728;<a href="5.html">Python&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF08;5&#xFF09;&#x2014;&#x2014;&#x7C7B;&#x578B;</a>&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BA4;&#x8BC6;&#x4E86;&#x8BB8;&#x591A;&#x7C7B;&#x578B;&#x3002;&#x53EF;&#x4F60;&#x77E5;&#x9053;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x4EC0;&#x4E48;&#x5417;&#xFF1F;</p>
 <p>&#x524D;&#x9762;&#x8BF4;type()&#x53EF;&#x4EE5;&#x68C0;&#x6D4B;&#x7C7B;&#x578B;&#x3002;</p>
-<p><img src="https://pic3.zhimg.com/80/v2-0562336ee406a450af4035626ae371d2_720w.jpg" alt="img"></p>
+<p><a href="https://pic3.zhimg.com/80/v2-0562336ee406a450af4035626ae371d2_720w.jpg" data-lightbox="8e4a8f6f-05bf-4737-95cc-aba74525951e" data-title="img" target="_blank"><img src="https://pic3.zhimg.com/80/v2-0562336ee406a450af4035626ae371d2_720w.jpg" alt="img"></a></p>
 <p>&#x6211;&#x5728;IPython&#x4E2D;&#x68C0;&#x6D4B;&#x4E86;&#x51E0;&#x4E2A;&#x7C7B;&#x578B;&#xFF1A;</p>
-<p><img src="https://pic1.zhimg.com/80/v2-64fad177ef449c971af354dae5dc06b8_720w.jpg" alt="img"></p>
+<p><a href="https://pic1.zhimg.com/80/v2-64fad177ef449c971af354dae5dc06b8_720w.jpg" data-lightbox="aaa87385-4a75-41eb-a02b-908c868a3bff" data-title="img" target="_blank"><img src="https://pic1.zhimg.com/80/v2-64fad177ef449c971af354dae5dc06b8_720w.jpg" alt="img"></a></p>
 <p>&#xFF1F;&#xFF1F;&#xFF1F;</p>
 <p>WTMD&#x600E;&#x4E48;&#x8DDF;&#x7C7B;&#x7684;&#x8F93;&#x51FA;&#x4E00;&#x6837;&#x554A;&#xFF1F;&#xFF01;</p>
-<p><img src="https://pic3.zhimg.com/80/v2-2c7ac9c3737d147d025bf2e57fc28812_720w.jpg" alt="img"></p>
+<p><a href="https://pic3.zhimg.com/80/v2-2c7ac9c3737d147d025bf2e57fc28812_720w.jpg" data-lightbox="f52f155d-c5f0-4ae5-94a0-cb243278d725" data-title="img" target="_blank"><img src="https://pic3.zhimg.com/80/v2-2c7ac9c3737d147d025bf2e57fc28812_720w.jpg" alt="img"></a></p>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x8FD9;&#x610F;&#x601D;&#x662F;&#xFF1A;&#x4EC0;&#x4E48;str&#x3001;int&#x3001;bool&#x3001;list&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x7C7B;&#x554A;&#xFF01;&#xFF01;</p>
 <p>&#x8FD9;&#x4E0B;&#x5927;&#x5BB6;&#x77E5;&#x9053;&#x672C;&#x6587;&#x5F00;&#x5934;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#x4E86;&#x5427;&#xFF1F;&#x5728;Python&#x4E2D;&#xFF0C;&#x4E07;&#x4E8B;&#x4E07;&#x7269;&#x90FD;&#x662F;&#x7C7B;&#x3002;</p>
 <p>&#x5176;&#x5B9E;Python2&#x8FD8;&#x6CA1;&#x8FD9;&#x6837;&#x5462;&#xFF0C;&#x68C0;&#x6D4B;&#x51FA;&#x6765;&#x7684;&#x8FD8;&#x662F;<code>&lt;type &apos;xxx&apos;&gt;</code>&#xFF0C;&#x800C;&#x5728;Python3&#x4E2D;&#xFF0C;&#x59A5;&#x59A5;&#x7684;&#x53D8;&#x6210;&#x7C7B;&#xFF0C;<code>&lt;class &apos;xxx&apos;&gt;</code>&#x4E86;&#x3002;</p>
 <p>&#x90A3;&#x4E48;&#x600E;&#x4E48;&#x7F16;&#x5199;&#x7C7B;&#x5462;&#xFF1F;</p>
 <p>&#x5C31;&#x4E0D;&#x544A;&#x8BC9;&#x4F60;&#xFF0C;&#x4F60;&#x6765;&#x6253;&#x6211;&#x5440;~</p>
-<p><img src="https://pic4.zhimg.com/v2-f948f7a36a66ac3564c8a07197f8e26b_b.webp" alt="img"></p>
+<p><a href="https://pic4.zhimg.com/v2-f948f7a36a66ac3564c8a07197f8e26b_b.webp" data-lightbox="04799829-6ef2-4d95-b4f7-60bd336d1055" data-title="img" target="_blank"><img src="https://pic4.zhimg.com/v2-f948f7a36a66ac3564c8a07197f8e26b_b.webp" alt="img"></a></p>
 <hr>
 <p>&#x597D;&#x5566;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x672C;&#x671F;&#x7684;&#x5185;&#x5BB9;&#xFF01;</p>
 <p>&#x6563;&#x4F1A;~</p>
-<p><img src="https://pic2.zhimg.com/80/v2-46f33351952d5cf8be56f19842ee6ab9_720w.jpg" alt="img"></p>
+<p><a href="https://pic2.zhimg.com/80/v2-46f33351952d5cf8be56f19842ee6ab9_720w.jpg" data-lightbox="3f1dfcfe-14fd-411f-8934-6a9fe89097d8" data-title="img" target="_blank"><img src="https://pic2.zhimg.com/80/v2-46f33351952d5cf8be56f19842ee6ab9_720w.jpg" alt="img"></a></p>
 <p>&#x597D;&#x5566;&#xFF0C;&#x7ADF;&#x7136;&#x4F60;&#x7FFB;&#x5230;&#x8FD9;&#x91CC;&#x6765;&#x4E86;&#xFF0C;&#x5C31;&#x7EE7;&#x7EED;&#x5427;&#x3002;</p>
 <p>&#x8981;&#x77E5;&#x9053;&#xFF0C;kzx&#x662F;&#x90A3;&#x79CD;&#x4E0D;&#x8BB2;&#x60C5;&#x4E49;&#x7684;&#x4EBA;&#x5417;~</p>
 <h2 id="2&#x7F16;&#x5199;&#x4F60;&#x7684;&#x7C7B;">2.&#x7F16;&#x5199;&#x4F60;&#x7684;&#x7C7B;</h2>
 <p>&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x8BB2;&#x8FC7;&#x7C7B;&#x7684;&#x683C;&#x5F0F;&#x4E86;&#x3002;</p>
-<p><img src="https://pic3.zhimg.com/80/v2-257741d0ddcbdb935dd8031fbe81b932_720w.jpg" alt="img"></p>
+<p><a href="https://pic3.zhimg.com/80/v2-257741d0ddcbdb935dd8031fbe81b932_720w.jpg" data-lightbox="0b6e5251-70c9-44a2-af95-b6905928348e" data-title="img" target="_blank"><img src="https://pic3.zhimg.com/80/v2-257741d0ddcbdb935dd8031fbe81b932_720w.jpg" alt="img"></a></p>
 <p>&#x6211;&#x4EEC;&#x4ECA;&#x5929;&#x4E3B;&#x8981;&#x8BB2;&#x600E;&#x4E48;&#x5D4C;&#x5165;&#x51FD;&#x6570;&#xFF0C;&#x8BA9;&#x5B83;&#x6D3B;&#x751F;&#x751F;&#x53D8;&#x6210;append&#x4E00;&#x6837;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
 <p>&#x5BF9;&#x4E86;&#xFF0C;&#x9700;&#x8981;&#x8BF4;&#x4E00;&#x4E2A;&#x77E5;&#x8BC6;&#x70B9;&#x3002;</p>
 <h3 id="21self&#x662F;&#x4EC0;&#x4E48;&#x9B3C;">2.1.Self&#x662F;&#x4EC0;&#x4E48;&#x9B3C;</h3>
 <p>&#x5728;&#x5D4C;&#x5165;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;<code>self</code>&#x3002;</p>
 <p>&#x505C;&#x505C;&#xFF01;self&#xFF1F;&#x4EC0;&#x4E48;&#x9B3C;&#xFF1F;</p>
-<p><img src="https://pic3.zhimg.com/80/v2-278b52fc0040fccf17e133b73f8e2f2e_720w.jpeg" alt="img"></p>
+<p><a href="https://pic3.zhimg.com/80/v2-278b52fc0040fccf17e133b73f8e2f2e_720w.jpeg" data-lightbox="70310b6f-335c-4eb0-bb7f-492399c98017" data-title="img" target="_blank"><img src="https://pic3.zhimg.com/80/v2-278b52fc0040fccf17e133b73f8e2f2e_720w.jpeg" alt="img"></a></p>
 <p>&#x4F60;&#x77E5;&#x9053;&#x8FD9;&#x662F;&#x4EC0;&#x4E48;&#x5417;&#xFF1F;</p>
 <p>&#x5927;&#x5BB6;&#x4E09;&#x5E74;&#x7EA7;&#x80AF;&#x5B9A;&#x82F1;&#x8BED;&#x8BFE;&#x5B66;&#x8FC7;&#xFF0C;&#x90A3;&#x5565;<code>Myself</code>&#x4E4B;&#x7C7B;&#x7684;&#x5427;&#xFF1F;</p>
 <p>&#x8FD9;&#x4E2A;&#x8BFE;&#x4E0D;&#x662F;&#x6709;<code>self</code>&#x5417;&#xFF1F;&#x4ECB;&#x7ECD;&#x81EA;&#x5DF1;&#x7684;&#x5417;&#xFF1F;</p>
@@ -433,8 +471,8 @@ fooder.rice()
 <hr>
 <p>&#x597D;&#x5566;&#xFF0C;&#x4ECA;&#x5929;&#x7684;&#x6587;&#x7AE0;&#x5C31;&#x5230;&#x8FD9;&#x91CC;&#xFF01;</p>
 <p>&#x6B22;&#x8FCE;&#x6765;&#x505A;&#x4E00;&#x4E2A;&#x6709;&#x8DA3;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;Man()~</p>
-<p><img src="https://pic1.zhimg.com/80/v2-36202fd521f30e7b74a4c2093fa128ec_720w.jpg" alt="img"></p>
-
+<p><a href="https://pic1.zhimg.com/80/v2-36202fd521f30e7b74a4c2093fa128ec_720w.jpg" data-lightbox="f11ef0da-49e7-444d-9a3c-a28b375a286f" data-title="img" target="_blank"><img src="https://pic1.zhimg.com/80/v2-36202fd521f30e7b74a4c2093fa128ec_720w.jpg" alt="img"></a></p>
+ <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
                                 
                                 </section>
                             
@@ -477,7 +515,7 @@ fooder.rice()
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"9.万事万物皆对象","level":"1.2.1.9","depth":3,"next":{"title":"10.我的爸爸的爸爸的爸爸的爸爸……","level":"1.2.1.10","depth":3,"path":"pylearning/basic/10.md","ref":"pylearning/basic/10.md","articles":[]},"previous":{"title":"8.把你的代码变短？可以可以，函数就行","level":"1.2.1.8","depth":3,"path":"pylearning/basic/8.md","ref":"pylearning/basic/8.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","-page-treeview","-anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Joinsodome(kzx)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Joinsodome Book","language":"zh-hans","links":{"sidebar":{"Github":"github.com/joinsodome/","Gitee":"gitee.com/joinsodome/","知乎(Zhihu)":"zhihu.com/people/kangzexizhihu/"}},"gitbook":"*","description":"记录我的知识"},"file":{"path":"pylearning/basic/9.md","mtime":"2021-11-06T11:26:25.510Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-06T12:52:49.322Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"9.万事万物皆对象","level":"1.2.1.9","depth":3,"next":{"title":"10.我的爸爸的爸爸的爸爸的爸爸……","level":"1.2.1.10","depth":3,"path":"pylearning/basic/10.md","ref":"pylearning/basic/10.md","articles":[]},"previous":{"title":"8.把你的代码变短？可以可以，函数就行","level":"1.2.1.8","depth":3,"path":"pylearning/basic/8.md","ref":"pylearning/basic/8.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","-page-treeview","-anchor-navigation-ex","page-toc-button","klipse","pageview-count","lightbox","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"pageview-count":{},"klipse":{"myConfigKey":"it's the default value"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Joinsodome(kzx)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Joinsodome Book","language":"zh-hans","links":{"sidebar":{"Github":"https://github.com/joinsodome/","Gitee":"https://gitee.com/joinsodome/","知乎(Zhihu)":"https://zhihu.com/people/kangzexizhihu/"}},"gitbook":"*","description":"记录我的知识"},"file":{"path":"pylearning/basic/9.md","mtime":"2021-11-07T08:26:23.938Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-13T13:47:39.817Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -495,7 +533,19 @@ fooder.rice()
         
     
         
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
         
     
         

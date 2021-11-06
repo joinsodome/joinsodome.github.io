@@ -5,7 +5,12 @@
         "-search", 
         "search-pro",
         "-page-treeview",
-        "-anchor-navigation-ex"
+        "-anchor-navigation-ex",
+        "page-toc-button",
+        "klipse",
+        "pageview-count",
+        "lightbox",
+        "hide-element"
     ],
     "title":"Joinsodome Book",
     "author":"Joinsodome(kzx)",
@@ -13,9 +18,14 @@
     "language":"zh-hans",
     "links":{
         "sidebar":{
-              "Github":"github.com/joinsodome/",
-              "Gitee":"gitee.com/joinsodome/",
-              "知乎(Zhihu)":"zhihu.com/people/kangzexizhihu/"
+              "Github":"https://github.com/joinsodome/",
+              "Gitee":"https://gitee.com/joinsodome/",
+              "知乎(Zhihu)":"https://zhihu.com/people/kangzexizhihu/"
+        }
+    },
+    "pluginsConfig": {
+        "hide-element": {
+            "elements": [".gitbook-link"]
         }
     }
 }

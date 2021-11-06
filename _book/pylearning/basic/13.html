@@ -1,0 +1,612 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13.try...except...容不得你在这儿撒野！ · Joinsodome Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Joinsodome(kzx)">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14.html" />
+    
+    
+    <link rel="prev" href="12.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/joinsodome/" target="_blank" class="custom-link">Github</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://gitee.com/joinsodome/" target="_blank" class="custom-link">Gitee</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://zhihu.com/people/kangzexizhihu/" target="_blank" class="custom-link">知乎(Zhihu)</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Python学习笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1.迈出第一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2.你不得不知道的小常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    3.人机交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    4.Asyncio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    5.类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    6.运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    7.如何把一个print(1)无限制下去，直到计算机吐血……
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    8.把你的代码变短？可以可以，函数就行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    9.万事万物皆对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    10.我的爸爸的爸爸的爸爸的爸爸……
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="11.html">
+            
+                <a href="11.html">
+            
+                    
+                    11.A的爸爸，B的爸爸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="12.html">
+            
+                <a href="12.html">
+            
+                    
+                    12.嘿嘿嘿，拿来吧你
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.13" data-path="13.html">
+            
+                <a href="13.html">
+            
+                    
+                    13.try...except...容不得你在这儿撒野！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="14.html">
+            
+                <a href="14.html">
+            
+                    
+                    14.当来自文件世界的精灵们，跑到了Python中……
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >13.try...except...容不得你在这儿撒野！</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="python&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF08;13&#xFF09;&#x2014;&#x2014;tryexcept&#x5BB9;&#x4E0D;&#x5F97;&#x4F60;&#x5728;&#x8FD9;&#x513F;&#x6492;&#x91CE;&#xFF01;">Python&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF08;13&#xFF09;&#x2014;&#x2014;try...except...&#x5BB9;&#x4E0D;&#x5F97;&#x4F60;&#x5728;&#x8FD9;&#x513F;&#x6492;&#x91CE;&#xFF01;</h1>
+<p>&#x5F00;&#x59CB;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x6765;&#x63D0;&#x95EE;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<p>&#x8BF7;&#x95EE;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x9519;&#x8BEF;&#x561B;&#xFF1F;</p>
+<pre><code class="lang-python">print(&#x54C8;&#x54C8;&#x54C8;&#xFF01;&#xFF01;&#xFF01;)
+</code></pre>
+<p>&#x7B54;&#xFF1A;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x662F;<strong>&#x9519;&#x8BEF;&#x7684;</strong>&#x3002;</p>
+<p>&#x5B83;&#x653E;&#x5230;&#x89E3;&#x91CA;&#x5668;&#x91CC;&#x4F1A;&#x62A5;&#x9519;&#xFF1A;</p>
+<pre><code class="lang-python">File <span class="hljs-string">&quot;xxx.py&quot;</span>, line <span class="hljs-number">1</span>
+    print(&#x54C8;&#x54C8;&#x54C8;&#xFF01;&#xFF01;&#xFF01;)
+               ^
+SyntaxError: invalid character <span class="hljs-keyword">in</span> identifier
+</code></pre>
+<p>&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x5982;&#x679C;&#x8FD9;&#x6837;&#x5199;&#xFF1A;</p>
+<pre><code class="lang-python">print(<span class="hljs-string">&apos;&#x54C8;&#x54C8;&#x54C8;&#xFF01;&#xFF01;&#xFF01;&apos;</span>)
+</code></pre>
+<p>&#x4ED6;&#x5C31;&#x4F1A;&#x6210;&#x529F;&#x663E;&#x793A;&#xFF1A;<code>&#x54C8;&#x54C8;&#x54C8;&#xFF01;&#xFF01;&#xFF01;</code>&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x6709;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x4F60;&#x53D1;&#x73B0;&#x6CA1;&#x6709;&#xFF1F;</p>
+<p>&#x4F46;&#x90A3;&#x4EC5;&#x4EC5;&#x662F;<code>&#x9519;&#x8BEF;</code>&#xFF08;<code>SyntaxError</code>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x5168;&#x662F;&#x9519;&#x8BEF;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x7814;&#x7A76;&#x7684;&#x662F;<code>&#x5F02;&#x5E38;</code>&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>int(<span class="hljs-string">&apos;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&apos;</span>) <span class="hljs-comment"># Python&#x65E0;&#x6CD5;&#x628A;&apos;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&apos;&#x8F6C;&#x6362;&#x4E3A;&#x6574;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x4F1A;&#x62A5;&#x9519;&#x3002;</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+    int(<span class="hljs-string">&apos;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&apos;</span>)
+ValueError: invalid literal <span class="hljs-keyword">for</span> int() <span class="hljs-keyword">with</span> base <span class="hljs-number">10</span>: <span class="hljs-string">&apos;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&apos;</span>
+</code></pre>
+<p>&#x6216;&#x8005;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;abc&apos;</span> + <span class="hljs-number">12</span> <span class="hljs-comment"># &#x8BF7;&#x95EE;&#x4F60;&#x89C9;&#x5F97;&#x6574;&#x6570;&#x52A0;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x548C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+    <span class="hljs-string">&apos;abc&apos;</span> + <span class="hljs-number">12</span>
+TypeError: can only concatenate str (<span class="hljs-keyword">not</span> <span class="hljs-string">&quot;int&quot;</span>) to str
+</code></pre>
+<p>&#x4F60;&#x53D1;&#x73B0;&#x89C4;&#x5F8B;&#x4E86;&#x561B;&#xFF1F;</p>
+<pre><code class="lang-python">Traceback (most recent call last):
+  File <span class="hljs-string">&quot;python&#x6587;&#x4EF6;&quot;</span>, line &#x6240;&#x5728;&#x884C;, <span class="hljs-keyword">in</span> &#x7C7B;&#x6216;&#x51FD;&#x6570;
+    <span class="hljs-comment"># &#x6211;&#x662F;&#x9519;&#x8BEF;&#x4EE3;&#x7801;</span>
+  ... <span class="hljs-comment"># &#x63A5;&#x4E0B;&#x6765;&#x8FD8;&#x4F1A;&#x4E00;&#x76F4;&#x8FFD;&#x5230;&#x9519;&#x8BEF;&#x7684;&#x9F3B;&#x7956;</span>
+&#x6211;&#x662F;&#x5F02;&#x5E38;: &#x6211;&#x662F;&#x9519;&#x8BEF;&#x539F;&#x56E0;
+</code></pre>
+<p>&#x54B1;&#x4EEC;&#x6765;&#x89E3;&#x8BFB;&#x4E00;&#x4E0B;&#x3002;</p>
+<p><code>Traceback (most recent call last)</code>&#xFF1A;Traceback&#x76F8;&#x5F53;&#x4E8E;&#x4F60;&#x901B;&#x6DD8;&#x5B9D;&#x65F6;&#x7684;<code>&#x8FFD;&#x6EAF;&#x6E90;</code>&#xFF0C;&#x4F1A;&#x4ECE;&#x9519;&#x8BEF;&#x5904;&#x4E00;&#x76F4;&#x8DD1;&#x5230;&#x9519;&#x8BEF;&#x7684;&#x9F3B;&#x7956;&#xFF08;&#x4E3B;&#x8981;&#x9519;&#x8BEF;&#x539F;&#x56E0;&#xFF09;&#xFF0C;&#x6700;&#x7EC8;&#x89E3;&#x8BFB;&#x7A0B;&#x5E8F;&#x7684;&#x5F02;&#x5E38;&#x3002;</p>
+<p><code>File &quot;python&#x6587;&#x4EF6;&quot;, line &#x6240;&#x5728;&#x884C;, in &#x7C7B;&#x6216;&#x51FD;&#x6570;</code>&#xFF1A;&#x9519;&#x8BEF;&#x5728;&#x54EA;&#x513F;&#xFF1F;&#x8FD9;&#x73A9;&#x610F;&#x513F;&#x53EF;&#x4EE5;&#x544A;&#x8BC9;&#x4F60;&#x3002;</p>
+<p><code># &#x6211;&#x662F;&#x9519;&#x8BEF;&#x4EE3;&#x7801;</code>&#xFF1A;&#x4F60;&#x9519;&#x54EA;&#x513F;&#x4E86;&#xFF1F;&#x8FD9;&#x73A9;&#x610F;&#x513F;&#x53EF;&#x4EE5;&#x544A;&#x8BC9;&#x4F60;&#x3002;&#xFF08;&#x6709;&#x65F6;&#x8FD8;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x5C0F;&#x7BAD;&#x5934;&#x8DDF;&#x968F;&#xFF09;</p>
+<p><code>...</code>&#xFF1A;&#x524D;&#x9762;&#x8BF4;&#x4E86;&#xFF0C;Traceback&#x4F1A;&#x4ECE;&#x9519;&#x8BEF;&#x5904;&#x4E00;&#x76F4;&#x8DD1;&#x5230;&#x9519;&#x8BEF;&#x7684;&#x9F3B;&#x7956;&#x3002;</p>
+<p><code>&#x6211;&#x662F;&#x9519;&#x8BEF;: &#x6211;&#x662F;&#x9519;&#x8BEF;&#x539F;&#x56E0;</code>&#xFF1A;&#x6CA1;&#x6709;&#x8FD9;&#x884C;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x548B;&#x6539;&#x90FD;&#x4E0D;&#x77E5;&#x9053;&#x3002;</p>
+<p>&#x90A3;&#x600E;&#x4E48;&#x62E6;&#x622A;&#x5462;&#xFF1F;</p>
+<p>&#x73B0;&#x5728;&#x8FDB;&#x5165;&#x91CD;&#x70B9;&#x2014;&#x2014;</p>
+<hr>
+<h2 id="1&#x62E6;&#x622A;&#x9519;&#x8BEF;">1.&#x62E6;&#x622A;&#x9519;&#x8BEF;</h2>
+<p><code>&#x62E6;&#x622A;&#x9519;&#x8BEF;</code>&#x5C31;&#x662F;&#x5229;&#x7528;<code>try...except...finally...else...</code>&#x7684;&#x7EC4;&#x5408;&#x62F3;&#xFF0C;&#x4E0D;&#x8BA9;&#x7A0B;&#x5E8F;&#x62A5;&#x9519;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">try</span>:
+<span class="hljs-meta">... </span>    int(<span class="hljs-string">&apos;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&apos;</span>)
+<span class="hljs-meta">... </span><span class="hljs-keyword">except</span>:
+<span class="hljs-meta">... </span>    print(<span class="hljs-string">&apos;&#x8B66;&#x544A;&#xFF01;&#x4F60;&#x88AB;&#x7EFF;&#x4E86;&#xFF01;&apos;</span>)
+...
+&#x8B66;&#x544A;&#xFF01;&#x4F60;&#x88AB;&#x7EFF;&#x4E86;&#xFF01;
+</code></pre>
+<p>&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#xFF0C;&#x5F00;&#x4E2A;&#x73A9;&#x7B11;&#x3002;</p>
+<p><a href="../static/5.png" data-lightbox="ad85465e-5154-49f0-8fa7-f89461dcfb38" data-title="img"><img src="../static/5.png" alt="img"></a></p>
+<p>&#x683C;&#x5F0F;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">try</span>:
+    <span class="hljs-comment"># &#x6211;&#x662F;&#x9519;&#x8BEF;&#x4EE3;&#x7801;</span>
+<span class="hljs-keyword">except</span> &#x6211;&#x662F;&#x5927;&#x540D;&#x9F0E;&#x9F0E;&#x7684;&#x9519;&#x8BEF; <span class="hljs-keyword">as</span> &#x6211;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x8D4B;&#x503C;&#x53D8;&#x91CF;: <span class="hljs-comment"># except&#x53EF;&#x4EE5;&#x4E0D;&#x6267;&#x884C;&#xFF08;&#x9664;&#x975E;finally&#x6216;else&#x4E0D;&#x6267;&#x884C;&#xFF09;</span>
+    <span class="hljs-comment"># &#x6211;&#x662F;&#x4E00;&#x811A;&#x8E22;&#x6B7B;&#x4F60;&#x7684;&#x4EE3;&#x7801;</span>
+<span class="hljs-keyword">finally</span>: <span class="hljs-comment"># finally&#x53EF;&#x4EE5;&#x4E0D;&#x6267;&#x884C;&#xFF08;&#x9664;&#x975E;except&#x6267;&#x884C;&#xFF09;</span>
+    <span class="hljs-comment"># &#x6211;&#x662F;&#x6B7B;&#x76AE;&#x8D56;&#x8138;&#x975E;&#x5F97;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;</span>
+<span class="hljs-keyword">else</span>: <span class="hljs-comment"># else&#x53EF;&#x4EE5;&#x4E0D;&#x6267;&#x884C;&#xFF08;&#x9664;&#x975E;except&#x6267;&#x884C;&#xFF09;</span>
+    <span class="hljs-comment"># &#x6211;&#x662F;&#x4E0D;&#x9519;&#x8BEF;&#x5C31;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;</span>
+</code></pre>
+<p>&#x770B;&#x7740;&#x662F;&#x4E0D;&#x662F;&#x548C;Java&#x7684;<code>try...catch...</code>&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#x5462;&#xFF1F;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">try</span> {
+    <span class="hljs-comment">// &#x6211;&#x662F;&#x9519;&#x8BEF;&#x4EE3;&#x7801;</span>
+} <span class="hljs-keyword">catch</span>(&#x6211;&#x662F;&#x5927;&#x540D;&#x9F0E;&#x9F0E;&#x7684;&#x9519;&#x8BEF; &#x6211;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x8D4B;&#x503C;&#x53D8;&#x91CF;) {
+    <span class="hljs-comment">// &#x6211;&#x662F;&#x4E00;&#x811A;&#x8E22;&#x6B7B;&#x4F60;&#x7684;&#x4EE3;&#x7801;</span>
+}
+</code></pre>
+<p>&#x4F9D;&#x7136;&#x89E3;&#x8BFB;&#x4E00;&#x4E0B;&#x3002;</p>
+<p><code>try</code>&#xFF1A;&#x8FD9;&#x91CC;&#x653E;&#x4E0A;&#xFF08;&#x5BB9;&#x6613;&#xFF09;&#x9519;&#x8BEF;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<p><code>except</code>&#xFF1A;&#x5173;&#x4E8E;&#x9519;&#x8BEF;&#x7684;&#x5904;&#x7406;&#x8BED;&#x53E5;&#x3002;</p>
+<p><code>finally</code>&#xFF1A;&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#x3002;</p>
+<p><code>else</code>&#xFF1A;&#x53EA;&#x6709;&#x4E0D;&#x9519;&#x8BEF;&#x624D;&#x80FD;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">try</span>:
+    i = <span class="hljs-string">&apos;abc&apos;</span> + <span class="hljs-number">1</span>
+<span class="hljs-keyword">except</span> TypeError:
+    print(<span class="hljs-string">&apos;&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x80FD;&#x4E0E;&#x6574;&#x6570;&#x76F8;&#x52A0;&apos;</span>)
+<span class="hljs-string">&apos;&apos;&apos;
+&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x80FD;&#x4E0E;&#x6574;&#x6570;&#x76F8;&#x52A0;
+&apos;&apos;&apos;</span>
+</code></pre>
+<p>&#x770B;&#x8D77;&#x6765;&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x723D;&#x5462;&#x3002;</p>
+<blockquote>
+<p>&#x6709;&#x4E00;&#x70B9;&#x9700;&#x8981;&#x63D0;&#x9192;&#xFF1A;&#x53EA;&#x6709;&#x7EE7;&#x627F;<code>Exception</code>&#x7684;&#x7C7B;&#xFF08;&#x7EE7;&#x627F;&#x89C1;<a href="10.html">Python&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF08;10&#xFF09;&#x2014;&#x2014;&#x6211;&#x7684;&#x7238;&#x7238;&#x7684;&#x7238;&#x7238;&#x7684;&#x7238;&#x7238;&#x7684;&#x7238;&#x7238;&#x2026;&#x2026;</a>&#xFF09;&#x624D;&#x53EF;&#x4EE5;&#x62E6;&#x622A;&#x3002;</p>
+<p>&#x53CD;&#x6B63;&#x6211;&#x662F;&#x5199;&#x4E86;&#x4E00;&#x5BB6;&#x4F19;&#xFF0C;&#x8FD8;&#x6CA1;&#x5199;&#x5B8C;&#x5C31;&#x62A5;&#x9519;&#x4E86;&#x3002;(&#x2283;&#xFF65;&#x1D25;&#xFF65;)&#x3064;</p>
+</blockquote>
+<p>&#x4E0B;&#x9762;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x6709;&#x70B9;&#x7CBE;&#x795E;&#x75C5;&#x7684;&#x5173;&#x952E;&#x8BCD;&#xFF1A;<code>raise</code>&#x3002;</p>
+<hr>
+<h2 id="2raise&#x2014;&#x2014;&#x62A5;&#x9519;&#x7684;&#x7F6A;&#x9B41;&#x7978;&#x9996;">2.raise&#x2014;&#x2014;&#x62A5;&#x9519;&#x7684;&#x7F6A;&#x9B41;&#x7978;&#x9996;</h2>
+<p>raise&#x4F1A;&#x81EA;&#x5DF1;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x6240;&#x6709;&#x62A5;&#x9519;&#x90FD;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x7CBE;&#x795E;&#x75C5;&#x7684;&#x7528;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">raise</span> &#x6211;&#x662F;&#x5927;&#x540D;&#x9F0E;&#x9F0E;&#x7684;&#x9519;&#x8BEF;(&#x6211;&#x662F;&#x5B83;&#x7684;&#x53C2;&#x6570;)
+</code></pre>
+<p><code>&#x6211;&#x662F;&#x5927;&#x540D;&#x9F0E;&#x9F0E;&#x7684;&#x9519;&#x8BEF;</code>&#xFF1A;&#x9519;&#x8BEF;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<p><code>&#x6211;&#x662F;&#x5B83;&#x7684;&#x53C2;&#x6570;</code>&#xFF1A;&#x9519;&#x8BEF;&#x7C7B;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4E00;&#x822C;&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x63CF;&#x8FF0;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x6709;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">more</span><span class="hljs-params">(x,y)</span>:</span>
+<span class="hljs-meta">... </span>    <span class="hljs-keyword">if</span> y == <span class="hljs-number">0</span>:
+<span class="hljs-meta">... </span>        <span class="hljs-keyword">raise</span> ZeroDivisionError(<span class="hljs-string">&apos;&#x4EFB;&#x4F55;&#x6570;&#x9664;&#x4EE5;0&#x90FD;&#x6CA1;&#x6709;&#x610F;&#x4E49;&apos;</span>)
+<span class="hljs-meta">... </span>    <span class="hljs-keyword">else</span>:
+<span class="hljs-meta">... </span>        <span class="hljs-keyword">return</span> x/y
+...
+<span class="hljs-meta">&gt;&gt;&gt; </span>more(<span class="hljs-number">1</span>,<span class="hljs-number">0</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+    more(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>)
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">3</span>, <span class="hljs-keyword">in</span> more
+    <span class="hljs-keyword">raise</span> ZeroDivisionError(<span class="hljs-string">&apos;&#x4EFB;&#x4F55;&#x6570;&#x9664;&#x4EE5;0&#x90FD;&#x6CA1;&#x6709;&#x610F;&#x4E49;&apos;</span>)
+ZeroDivisionError: &#x4EFB;&#x4F55;&#x6570;&#x9664;&#x4EE5;<span class="hljs-number">0</span>&#x90FD;&#x6CA1;&#x6709;&#x610F;&#x4E49;
+</code></pre>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x62E6;&#x622A;&#x4F4F;&#x9519;&#x8BEF;&#x4E0D;&#x662F;print&#xFF0C;&#x800C;&#x662F;raise&#x5462;&#xFF1F;&#x8FD9;&#x4E0D;&#x662F;&#x795E;&#x7ECF;&#x75C5;&#x662F;&#x5565;&#xFF1F;</p>
+<p>&#x5176;&#x5B9E;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5F88;&#x5E38;&#x89C1;&#xFF0C;<strong>&#x7528;raise&#x628A;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x5411;&#x4E0A;&#x629B;&#xFF0C;&#x6700;&#x9AD8;&#x7684;&#x7BA1;&#x7406;&#x5C42;&#xFF08;&#x5373;&#x8C03;&#x7528;&#x53C2;&#x6570;&#x7684;&#x5730;&#x65B9;&#xFF09;&#x5C31;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x7528;try...except...&#x7EC4;&#x5408;&#x62F3;&#x62E6;&#x622A;&#x4F4F;&#x3002;</strong>&#x5426;&#x5219;&#xFF0C;&#x8981;&#x662F;&#x4F60;&#x6765;&#x4E00;&#x4E2A;print&#xFF0C;&#x4F60;&#x96BE;&#x9053;&#x8FD8;&#x7528;<code>stringio</code>&#x62E6;&#x622A;&#xFF1F;&#xFF01;&#x771F;&#x662F;&#x5C0F;&#x9898;&#x5927;&#x505A;&#xFF01;&#xFF01;&#xFF01;</p>
+<blockquote>
+<p>stringio&#x6211;&#x4EEC;&#x63A5;&#x4E0B;&#x6765;&#x4F1A;&#x8BB2;&#x3002;</p>
+</blockquote>
+<hr>
+<p>&#x597D;&#x7684;&#xFF0C;&#x4ECA;&#x5929;&#x7684;&#x6587;&#x7AE0;&#x5C31;&#x5230;&#x8FD9;&#x91CC;&#x3002;</p>
+<p>&#x6563;&#x4F1A;~</p>
+<p><a href="https://pic1.zhimg.com/80/v2-36202fd521f30e7b74a4c2093fa128ec_720w.jpg" data-lightbox="4441f630-e41d-485b-a415-3f4f97cd16ff" data-title="img" target="_blank"><img src="https://pic1.zhimg.com/80/v2-36202fd521f30e7b74a4c2093fa128ec_720w.jpg" alt="img"></a></p>
+ <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="12.html" class="navigation navigation-prev " aria-label="Previous page: 12.嘿嘿嘿，拿来吧你">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14.html" class="navigation navigation-next " aria-label="Next page: 14.当来自文件世界的精灵们，跑到了Python中……">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13.try...except...容不得你在这儿撒野！","level":"1.2.1.13","depth":3,"next":{"title":"14.当来自文件世界的精灵们，跑到了Python中……","level":"1.2.1.14","depth":3,"path":"pylearning/basic/14.md","ref":"pylearning/basic/14.md","articles":[]},"previous":{"title":"12.嘿嘿嘿，拿来吧你","level":"1.2.1.12","depth":3,"path":"pylearning/basic/12.md","ref":"pylearning/basic/12.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","-page-treeview","-anchor-navigation-ex","page-toc-button","klipse","pageview-count","lightbox","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"pageview-count":{},"klipse":{"myConfigKey":"it's the default value"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Joinsodome(kzx)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Joinsodome Book","language":"zh-hans","links":{"sidebar":{"Github":"https://github.com/joinsodome/","Gitee":"https://gitee.com/joinsodome/","知乎(Zhihu)":"https://zhihu.com/people/kangzexizhihu/"}},"gitbook":"*","description":"记录我的知识"},"file":{"path":"pylearning/basic/13.md","mtime":"2021-11-07T08:26:23.916Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-13T13:47:39.817Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
