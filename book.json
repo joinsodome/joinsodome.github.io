@@ -1,0 +1,21 @@
+{
+    "plugins":[
+        "-sharing",
+        "-lunr", 
+        "-search", 
+        "search-pro",
+        "-page-treeview",
+        "-anchor-navigation-ex"
+    ],
+    "title":"Joinsodome Book",
+    "author":"Joinsodome(kzx)",
+    "description":"记录我的知识",
+    "language":"zh-hans",
+    "links":{
+        "sidebar":{
+              "Github":"github.com/joinsodome/",
+              "Gitee":"gitee.com/joinsodome/",
+              "知乎(Zhihu)":"zhihu.com/people/kangzexizhihu/"
+        }
+    }
+}
