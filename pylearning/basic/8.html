@@ -1,0 +1,601 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>8.把你的代码变短？可以可以，函数就行 · Joinsodome Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Joinsodome(kzx)">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="9.html" />
+    
+    
+    <link rel="prev" href="7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/joinsodome/" target="_blank" class="custom-link">Github</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://gitee.com/joinsodome/" target="_blank" class="custom-link">Gitee</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://zhihu.com/people/kangzexizhihu/" target="_blank" class="custom-link">知乎(Zhihu)</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Python学习笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1.迈出第一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2.你不得不知道的小常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    3.人机交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    4.Asyncio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    5.类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    6.运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    7.如何把一个print(1)无限制下去，直到计算机吐血……
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    8.把你的代码变短？可以可以，函数就行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    9.万事万物皆对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    10.我的爸爸的爸爸的爸爸的爸爸……
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="11.html">
+            
+                <a href="11.html">
+            
+                    
+                    11.A的爸爸，B的爸爸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="12.html">
+            
+                <a href="12.html">
+            
+                    
+                    12.嘿嘿嘿，拿来吧你
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.13" data-path="13.html">
+            
+                <a href="13.html">
+            
+                    
+                    13.try...except...容不得你在这儿撒野！
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >8.把你的代码变短？可以可以，函数就行</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="python&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF08;8&#xFF09;&#x2014;&#x2014;&#x628A;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x53D8;&#x77ED;&#xFF1F;&#x53EF;&#x4EE5;&#x53EF;&#x4EE5;&#xFF0C;&#x51FD;&#x6570;&#x5C31;&#x884C;">Python&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF08;8&#xFF09;&#x2014;&#x2014;&#x628A;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x53D8;&#x77ED;&#xFF1F;&#x53EF;&#x4EE5;&#x53EF;&#x4EE5;&#xFF0C;&#x51FD;&#x6570;&#x5C31;&#x884C;</h1>
+<p>&#x4ECA;&#x5929;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x6765;&#x5206;&#x4EAB;&#x4F60;&#x7684;&#x88C5;x&#x6280;&#x5DE7;&#xFF0C;&#x54E6;&#x4E0D;&#x5BF9;&#xFF0C;&#x662F;Python&#x7684;&#x5B66;&#x4E60;&#x6559;&#x7A0B;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x770B;&#x4E4B;&#x524D;&#x7684;&#xFF0C;&#x8BF7;&#x7FFB;&#x56DE;&#x53BB;&#x7785;&#x7785;&#xFF0C;&#x4FDD;&#x51C6;&#x6709;&#x60CA;&#x559C;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6B63;&#x5F0F;&#x5F00;&#x59CB;&#x4F20;&#x6388;&#x4E8E;&#x4F60;Python&#x5B66;&#x4E60;&#x65B9;&#x6CD5;&#xFF0C;&#x6B27;&#x8036;~</p>
+<p><a href="https://pic4.zhimg.com/80/v2-885901845ac875d6ed94529a50a73ecf_720w.jpg" data-lightbox="05cd030b-3ee2-4e34-9377-04a692ae54e5" data-title="img" target="_blank"><img src="https://pic4.zhimg.com/80/v2-885901845ac875d6ed94529a50a73ecf_720w.jpg" alt="img"></a></p>
+<hr>
+<h2 id="1&#x8282;&#x7701;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4EC0;&#x4E48;">1.&#x8282;&#x7701;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4EC0;&#x4E48;</h2>
+<p>&#x6211;&#x4EEC;&#x7684;&#x6587;&#x7AE0;&#x6807;&#x9898;&#x5C31;&#x662F;&#x201C;&#x628A;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x53D8;&#x77ED;&#x201D;&#xFF0C;&#x90A3;&#x4E48;&#x8C01;&#x80FD;&#x8BF4;&#x4E00;&#x4E0B;&#x600E;&#x4E48;&#x628A;&#x4EE3;&#x7801;&#x53D8;&#x77ED;&#x5462;&#xFF1F;</p>
+<p>&#x5C0F;&#x4F19;&#x4F34;&#xFF1A;&#x90A3;&#x8FD8;&#x7528;&#x95EE;&#xFF0C;&#x5F53;&#x7136;&#x662F;&#x628A;&#x91CD;&#x8981;&#x7684;&#x90E8;&#x5206;&#x53BB;&#x6389;&#xFF0C;&#x7559;&#x4E0B;&#x6CA1;&#x4E2A;&#x5375;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x55BD;~</p>
+<p>&#xFF08;kzx&#x76F4;&#x63A5;&#x6765;&#x4E86;&#x4E00;&#x5DF4;&#x638C;&#x2026;&#x2026;&#xFF09;</p>
+<p>&#x4E0A;&#x671F;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8BF4;&#x4E86;&#xFF0C;&#x7528;&#x5FAA;&#x73AF;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x91CD;&#x590D;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8282;&#x7701;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x5982;&#x679C;&#x8981;&#x5199;&#x8FD9;&#x6837;&#x4E00;&#x4E32;&#x4E71;&#x4E03;&#x516B;&#x7CDF;&#x3001;&#x6CA1;&#x4E2A;&#x5375;&#x7528;&#x3001;&#x8FD8;&#x65E0;&#x804A;&#x5230;&#x5929;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#xFF08;&#x4EE5;&#x4E0B;&#x7B80;&#x79F0;&#x201C;&#x65E0;&#x804A;&#x7684;&#x4EE3;&#x7801;&#x201D;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x4EE3;&#x7801;&#x5757;1</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">100</span>):
+    print(<span class="hljs-number">1</span>)
+<span class="hljs-comment"># &#x4EE3;&#x7801;&#x5757;2</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">100</span>):
+    print(<span class="hljs-number">1</span>)
+<span class="hljs-comment"># &#x4EE3;&#x7801;&#x5757;3</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range......
+</code></pre>
+<p>&#x597D;&#x5427;&#x597D;&#x5427;&#xFF0C;&#x5B9E;&#x5728;&#x770B;&#x4E0D;&#x4E0B;&#x53BB;&#x4E86;&#x3002;(&#xAF;&#xAF;&#x2570;&#x256F;&#x2229;&#x2570;&#x256F;&#xFFE3;)</p>
+<p>&#x90A3;&#x4E48;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x8282;&#x7701;&#x4EE3;&#x7801;&#x5462;&#xFF1F;</p>
+<p>&#x53EF;&#x4EE5;&#x53EF;&#x4EE5;&#xFF0C;&#x51FD;&#x6570;&#x5C31;&#x884C;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x91CD;&#x590D;&#x52A8;&#x4F5C;&#x7684;&#x597D;&#x5E2E;&#x624B;&#xFF0C;&#x53EA;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4E07;&#x884C;&#x4EE3;&#x7801;&#x53EA;&#x9700;&#x4E00;&#x884C;&#x6267;&#x884C;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x725B;&#x63B0;&#x5450;~</p>
+<p>&#x6211;&#x4EEC;&#x8FD9;&#x4E2A;&#x201C;&#x65E0;&#x804A;&#x7684;&#x4EE3;&#x7801;&#x201D;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x4EE3;&#x7801;&#x5757;1</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">100</span>):
+    print(<span class="hljs-number">1</span>)
+<span class="hljs-comment"># &#x4EE3;&#x7801;&#x5757;2</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">100</span>):
+    print(<span class="hljs-number">1</span>)
+<span class="hljs-comment"># &#x4EE3;&#x7801;&#x5757;3</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range......
+</code></pre>
+<p>&#x53EA;&#x9700;&#x8981;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">puts</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">100</span>):
+        print(<span class="hljs-number">1</span>)
+<span class="hljs-comment"># &#x4EE3;&#x7801;&#x5757;1</span>
+puts()
+<span class="hljs-comment"># &#x4EE3;&#x7801;&#x5757;2</span>
+puts()
+<span class="hljs-comment"># &#x4EE3;&#x7801;&#x5757;3</span>
+puts()......
+</code></pre>
+<p>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x65B9;&#x4FBF;&#x5462;&#x3002;</p>
+<p>&#x503C;&#x5F97;&#x4E00;&#x63D0;&#x7684;&#x662F;&#xFF0C;Python&#x8FD8;&#x5185;&#x7F6E;&#x4E86;&#x51FD;&#x6570;&#xFF0C;&#x6BD4;&#x5982;print()&#xFF0C;input()&#xFF0C;&#x7279;&#x522B;&#x65B9;&#x4FBF;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x600E;&#x4E48;&#x7F16;&#x5199;&#x51FD;&#x6570;&#x5462;&#xFF1F;</p>
+<p>&#x5C31;&#x4E0D;&#x544A;&#x8BC9;&#x4F60;&#xFF0C;&#x4F60;&#x6765;&#x6253;&#x6211;&#x5440;~</p>
+<p><a href="https://pic4.zhimg.com/v2-f948f7a36a66ac3564c8a07197f8e26b_b.webp" data-lightbox="a825fbdb-e538-42b6-8396-2e25e99c7a2d" data-title="img" target="_blank"><img src="https://pic4.zhimg.com/v2-f948f7a36a66ac3564c8a07197f8e26b_b.webp" alt="img"></a></p>
+<hr>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x672C;&#x671F;&#x7684;&#x5185;&#x5BB9;&#xFF01;</p>
+<p>&#x6563;&#x4F1A;~</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p><a href="https://pic2.zhimg.com/80/v2-46f33351952d5cf8be56f19842ee6ab9_720w.jpg" data-lightbox="7c888b47-3daa-48f9-9773-439824b56e99" data-title="img" target="_blank"><img src="https://pic2.zhimg.com/80/v2-46f33351952d5cf8be56f19842ee6ab9_720w.jpg" alt="img"></a></p>
+<p>&#x597D;&#x5566;&#xFF0C;&#x7ADF;&#x7136;&#x4F60;&#x7FFB;&#x5230;&#x8FD9;&#x91CC;&#x6765;&#x4E86;&#xFF0C;&#x5C31;&#x7EE7;&#x7EED;&#x5427;&#x3002;</p>
+<p>&#x8981;&#x77E5;&#x9053;&#xFF0C;kzx&#x662F;&#x90A3;&#x79CD;&#x4E0D;&#x8BB2;&#x60C5;&#x4E49;&#x7684;&#x4EBA;&#x5417;~</p>
+<h2 id="2&#x7F16;&#x5199;&#x4F60;&#x7684;&#x51FD;&#x6570;">2.&#x7F16;&#x5199;&#x4F60;&#x7684;&#x51FD;&#x6570;</h2>
+<p>&#x5728;&#x7F16;&#x5199;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x77E5;&#x9053;&#x4E00;&#x4E2A;&#x540D;&#x8BCD;&#xFF1A;DEF&#x3002;</p>
+<p>&#x4EC0;&#x4E48;&#x610F;&#x601D;&#x5462;&#xFF1F;</p>
+<p>&#x5B83;&#x662F;Define&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x6307;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+<blockquote>
+<p>&#x8BF4;&#x662F;Define&#xFF0C;&#x4F46;&#x6211;&#x600E;&#x4E48;&#x611F;&#x89C9;&#x50CF;Define function&#x5462;&#xF3C;(&#xFFE3;&#x2570;&#x256F;&#xFFE3;)&#xF3D;</p>
+</blockquote>
+<p>&#x5BF9;&#x4E86;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x8BF4;&#x4E00;&#x4E0B;&#xFF0C;def&#x662F;&#x4FDD;&#x7559;&#x5B57;&#xFF0C;&#x56E0;&#x6B64;&#x4F60;&#x4E0D;&#x80FD;&#x5199;&#x4E00;&#x4E2A;&#x7528;def&#x8D77;&#x540D;&#x7684;&#x53D8;&#x91CF;&#x54E6;~</p>
+<p>&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> &#x6211;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;<span class="hljs-params">(&#x6211;&#x662F;&#x4E00;&#x4E2A;&#x53C2;&#x6570;)</span>:</span>
+    <span class="hljs-comment"># &#x6211;&#x662F;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;</span>
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x53EF;&#x4EE5;&#x7528;<code>&#x6211;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;(&#x6211;&#x662F;&#x4E00;&#x4E2A;&#x53C2;&#x6570;)</code>&#x6765;&#x8C03;&#x7528;<code># &#x6211;&#x662F;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;</code>&#x3002;</p>
+<blockquote>
+<p>&#x6DFB;&#x52A0;<code>&#x6211;&#x662F;&#x4E00;&#x4E2A;&#x53C2;&#x6570;</code>&#x7684;&#x610F;&#x601D;&#x662F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8BA9;&#x7528;&#x6237;&#x8C03;&#x7528;&#x65F6;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x6837;&#x4ED6;&#x8BA9;&#x4F60;&#x64A9;&#x51E0;&#x6B21;&#x59B9;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x7528;for&#x64A9;&#x51E0;&#x6B21;&#x59B9;&#xFF0C;&#x6B27;&#x8036;~&#xFF08;&#x4E0D;&#x597D;&#x610F;&#x601D;&#xFF0C;&#x6211;&#x53C8;&#x8DD1;&#x504F;&#x4E86;&#xFF09;<br/>
+&#x53E6;&#x5916;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x4E0D;&#x4E00;&#x5B9A;&#x975E;&#x5F97;&#x8981;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;for&#x5FAA;&#x73AF;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x6765;&#x64A9;&#x59B9;&#xFF0C;&#x6B27;&#x8036;~&#xFF08;&#x4E0D;&#x597D;&#x610F;&#x601D;&#xFF0C;&#x6211;&#x53C8;&#x53C8;&#x53C8;&#x8DD1;&#x504F;&#x4E86;&#xFF09;</p>
+</blockquote>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x5B9A;&#x4E49;&#x8FD9;&#x4E48;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">eat_rice</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">&apos;kzx&#x6B63;&#x5728;&#x5403;&#x7C73;&#x2026;&#x2026;&apos;</span>)
+</code></pre>
+<p>&#x6211;&#x5C31;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x8C03;&#x7528;&#xFF0C;&#x8BA9;&#x4ED6;&#x5403;3&#x7897;&#x7C73;&#xFF1A;</p>
+<pre><code class="lang-python">eat_rice()
+eat_rice()
+eat_rice()
+<span class="hljs-string">&apos;&apos;&apos;
+kzx&#x6B63;&#x5728;&#x5403;&#x7C73;&#x2026;&#x2026;
+kzx&#x6B63;&#x5728;&#x5403;&#x7C73;&#x2026;&#x2026;
+kzx&#x6B63;&#x5728;&#x5403;&#x7C73;&#x2026;&#x2026;
+&apos;&apos;&apos;</span>
+</code></pre>
+<p>&#x90A3;&#x4E48;&#x5982;&#x679C;&#x4F60;&#x78B0;&#x4E0A;&#x5927;&#x80C3;&#x738B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    eat_rice()
+</code></pre>
+<p>&#x4E0D;&#x597D;&#x610F;&#x601D;&#xFF0C;&#x6211;&#x8981;&#x88AB;&#x6491;&#x6B7B;&#x4E86;&#xFF0C;&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#x55DD;~&#xFF08;&#x672A;&#x5B8C;&#x5F85;&#x7EED;&#xFF09;</p>
+<p>&#x6216;&#x8005;&#x8BF4;&#x4F60;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">eat_rice</span><span class="hljs-params">(count)</span>:</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(count):
+        print(<span class="hljs-string">&apos;kzx&#x6B63;&#x5728;&#x5403;&#x7C73;&#x2026;&#x2026;&apos;</span>)
+</code></pre>
+<p>&#x5403;&#x8D77;&#x6765;~</p>
+<pre><code class="lang-python">eat_rice(<span class="hljs-number">3</span>)
+<span class="hljs-string">&apos;&apos;&apos;
+kzx&#x6B63;&#x5728;&#x5403;&#x7C73;&#x2026;&#x2026;
+kzx&#x6B63;&#x5728;&#x5403;&#x7C73;&#x2026;&#x2026;
+kzx&#x6B63;&#x5728;&#x5403;&#x7C73;&#x2026;&#x2026;
+&apos;&apos;&apos;</span>
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x4E0D;&#x5C31;&#x5F88;&#x7B80;&#x5355;&#x5566;&#x3002;</p>
+<hr>
+<p>&#x597D;&#x5566;&#xFF0C;&#x4ECA;&#x5929;&#x7684;&#x6587;&#x7AE0;&#x5C31;&#x5230;&#x8FD9;&#x91CC;&#xFF01;</p>
+<p>&#x6B22;&#x8FCE;&#x53D1;&#x6325;&#x60F3;&#x8C61;&#x529B;&#xFF0C;&#x6765;&#x4E00;&#x4E2A;eat_chicken()~&#xFF08;&#x4E0D;&#x597D;&#x610F;&#x601D;&#xFF0C;&#x6211;&#x53C8;&#x53CC;&#x53D2;&#x53D5;&#x8DD1;&#x504F;&#x4E86;&#x3002;&#x600E;&#x4E48;&#x626F;&#x5230;&#x5403;&#x9E21;&#x6E38;&#x620F;&#x4E0A;&#x4E86;~&#xFF09;</p>
+<p><a href="https://pic1.zhimg.com/80/v2-4e42b63a5870587de34c430c0071c4ec_720w.jpg" data-lightbox="8ad36ba8-166e-402b-9fe2-8e8882a87b63" data-title="img" target="_blank"><img src="https://pic1.zhimg.com/80/v2-4e42b63a5870587de34c430c0071c4ec_720w.jpg" alt="img"></a></p>
+ <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7.html" class="navigation navigation-prev " aria-label="Previous page: 7.如何把一个print(1)无限制下去，直到计算机吐血……">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="9.html" class="navigation navigation-next " aria-label="Next page: 9.万事万物皆对象">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"8.把你的代码变短？可以可以，函数就行","level":"1.2.1.8","depth":3,"next":{"title":"9.万事万物皆对象","level":"1.2.1.9","depth":3,"path":"pylearning/basic/9.md","ref":"pylearning/basic/9.md","articles":[]},"previous":{"title":"7.如何把一个print(1)无限制下去，直到计算机吐血……","level":"1.2.1.7","depth":3,"path":"pylearning/basic/7.md","ref":"pylearning/basic/7.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-pro","-page-treeview","-anchor-navigation-ex","page-toc-button","klipse","pageview-count","lightbox","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"pageview-count":{},"klipse":{"myConfigKey":"it's the default value"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Joinsodome(kzx)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Joinsodome Book","language":"zh-hans","links":{"sidebar":{"Github":"https://github.com/joinsodome/","Gitee":"https://gitee.com/joinsodome/","知乎(Zhihu)":"https://zhihu.com/people/kangzexizhihu/"}},"gitbook":"*","description":"记录我的知识"},"file":{"path":"pylearning/basic/8.md","mtime":"2021-11-07T08:06:30.133Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-07T08:26:21.836Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
